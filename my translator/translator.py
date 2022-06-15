@@ -10,7 +10,7 @@ def translate_text(text, dest='en'):
     raise ValueError("text empty")
 
 
-def translate_multi_texts2(*args, dest='en'):
+def translate_multi_texts(dest='en', *args):
     args = translator.translate(args, dest=dest)
     return args.text
 
